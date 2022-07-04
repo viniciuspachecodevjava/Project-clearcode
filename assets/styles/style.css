@@ -26,9 +26,12 @@ img{
     color:#E0FFF9;
     font-family: 'Poppins';
     font-weight: 300;
+
 }
 .menu-desktop{
     align-self: center;
+    display: flex;;
+
 }
 li{
   display: inline;
@@ -142,10 +145,32 @@ ul li a:hover{
 }
 .title-fr{
     display: flex;
+    
 }
 .title-fr, .title-bk {
     font-family: "Poppins";
     font-size: 1.5rem;
+    position: relative;
+    margin:20px 0;
+}
+.title-fr::after{
+    content:'';
+    width:100px;
+    height:5px;
+    top:35px;
+    right:12px;
+    background-color: #009A7A;
+    display: block;
+    position: absolute;
+}
+.title-bk::after{
+    content:'';
+    width:100px;
+    height:5px;
+    right:12px;
+    background-color: #009A7A;
+    display: block;
+    position: absolute;
 }
 /*MAIN SECTION .body-courses*/
 .body-prices{
@@ -345,4 +370,35 @@ ul li a:hover{
     text-align: center;
     color:#E0FFF9;
     font-family: sans-serif;
+}
+
+@media (max-width:680px){
+    .content-wrapp {
+        flex-direction: column;
+        padding:10px;
+        gap:30px;
+    }
+    .logo-wrapp a{
+        text-align: center;
+    }
+    .menu-desktop ul li a{
+        font-size: 1rem;
+        padding:5px;
+    }
+    .body-prices{
+        padding: 10px;
+    }
+    .item-pricebox:nth-child(3) .recommended{
+        right:-10px;
+    }
+}
+@media (max-width:320px){
+    .courses-learn{
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+    }
+    .body-prices{
+        padding: 5px;
+    }
 }
