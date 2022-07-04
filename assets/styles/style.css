@@ -391,6 +391,8 @@ ul li a:hover{
     .item-pricebox:nth-child(3) .recommended{
         right:-10px;
     }
+}
+@media (max-width:580px){
     .box-prices .item-pricebox:nth-child(3){
         order:-3;
     }
