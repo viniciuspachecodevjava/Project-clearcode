@@ -13,8 +13,10 @@ function initAnimateSmoth() {
       }
     })
   }
+  sectionTop();
   window.addEventListener('scroll', sectionTop);
 }
+initAnimateSmoth();
 function initAnimateScroll() {
   const linkInterno = document.querySelectorAll('.js-menu a[href^="#"]');
 
@@ -34,5 +36,5 @@ function initAnimateScroll() {
   }
 }
 
-initAnimateSmoth();
+
 initAnimateScroll();
