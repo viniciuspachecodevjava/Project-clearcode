@@ -410,3 +410,14 @@ ul li a:hover{
         padding: 5px;
     }
 }
+
+.js-scroll{
+    opacity: 0;
+    transition: .6s ease-in-out;
+    transform: translateX(-30px);
+}
+.js-scroll.ativo{
+    opacity: 1;
+    transition: .4s ease-in-out;
+    transform: translateX(0);
+}
